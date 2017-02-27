@@ -195,6 +195,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/images\/movies\/slide02.jpg": {
+		"ft": 16384,
+		"iS": 362471,
+		"oA": 0,
+		"oAP": "\/assets\/images\/movies\/slide02.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/js\/materialize.min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -807,6 +815,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/scss\/theme\/globals\/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/scss\/theme\/page-movies\/_page-movies.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/scss\/theme\/page-movies\/_page-movies.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1801,6 +1822,12 @@
 		"oAP": "\/pages\/home.htm",
 		"oF": 0
 		},
+	"\/pages\/movies.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/pages\/movies.htm",
+		"oF": 0
+		},
 	"\/partials\/_addons\/vendor-css.htm": {
 		"ft": 8192,
 		"oA": 2,
@@ -1847,6 +1874,18 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/partials\/globals\/stylesheet.htm",
+		"oF": 0
+		},
+	"\/partials\/movies\/head.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/partials\/movies\/head.htm",
+		"oF": 0
+		},
+	"\/partials\/movies\/page-head.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/partials\/movies\/page-head.htm",
 		"oF": 0
 		},
 	"\/theme.yaml": {

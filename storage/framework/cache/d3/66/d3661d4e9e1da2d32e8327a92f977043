@@ -1,0 +1,65 @@
+1488235320a:1:{s:10:"movies.htm";a:10:{s:8:"fileName";s:10:"movies.htm";s:7:"content";s:918:"title = "Movies"
+url = "/movies"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Arteriaweb\Movies\Models\Movie"
+scope = "-"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% partial 'movies/page-head' %}
+
+<section id="movies-content" class="section">
+	
+	<div class="row">
+		<div class="container">
+			{% component 'builderList' %}
+		</div>
+	</div>
+	
+</section>
+
+
+<div class="row  blue-grey darken-4">
+	<div class="container">
+		<section id="typgraphy" class="section">
+			<h1 class="white-text">H1 heading</h1>
+			<h2 class="white-text">H2 heading</h2>
+			<h3 class="white-text">H3 heading</h3>
+			<h4 class="white-text">H4 heading</h4>
+			<h5 class="white-text">H5 heading</h5>
+			<h6 class="white-text">H6 heading</h6>
+			<p class="white-text">p paragraph</p>
+		</section>
+	</div>
+</div>";s:5:"mtime";i:1488234701;s:6:"markup";s:643:"{% partial 'movies/page-head' %}
+
+<section id="movies-content" class="section">
+	
+	<div class="row">
+		<div class="container">
+			{% component 'builderList' %}
+		</div>
+	</div>
+	
+</section>
+
+
+<div class="row  blue-grey darken-4">
+	<div class="container">
+		<section id="typgraphy" class="section">
+			<h1 class="white-text">H1 heading</h1>
+			<h2 class="white-text">H2 heading</h2>
+			<h3 class="white-text">H3 heading</h3>
+			<h4 class="white-text">H4 heading</h4>
+			<h5 class="white-text">H5 heading</h5>
+			<h6 class="white-text">H6 heading</h6>
+			<p class="white-text">p paragraph</p>
+		</section>
+	</div>
+</div>";s:4:"code";N;s:5:"title";s:6:"Movies";s:3:"url";s:7:"/movies";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:7:{s:10:"modelClass";s:30:"Arteriaweb\Movies\Models\Movie";s:5:"scope";s:1:"-";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

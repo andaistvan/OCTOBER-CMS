@@ -1,0 +1,77 @@
+1488234744a:1:{s:18:"globals/header.htm";a:6:{s:8:"fileName";s:18:"globals/header.htm";s:7:"content";s:1387:"description = "default header"
+==
+<header id="main-header">
+
+      <!-- MAIN MENU Dropdown Structure -->
+         <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+         </ul>
+
+   <nav>
+      <div class="nav-wrapper">
+         <a href="#!" class="brand-logo">Logo</a>
+
+         <!-- MOBIL MENU SIDE-NAV Trigger -->
+         <a href="#" data-activates="mobile-demo" class="button-collapse" id="bal-menu"><i class="material-icons">menu</i></a>
+
+         <!-- MAIN MENU -->
+         <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="movies">Movies</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+         </ul>
+
+
+        <!-- MOBIL MENU SIDE-NEV Structure -->
+        <ul class="side-nav" id="mobile-demo">
+           <li><a href="movies">Movies</a></li>
+           <li><a href="badges.html">Components</a></li>
+           <li><a href="collapsible.html">Javascript</a></li>
+           <li><a href="mobile.html">Mobile</a></li>
+         </ul>
+
+
+      </div>
+   </nav>
+</header>";s:5:"mtime";i:1488233473;s:6:"markup";s:1353:"<header id="main-header">
+
+      <!-- MAIN MENU Dropdown Structure -->
+         <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+         </ul>
+
+   <nav>
+      <div class="nav-wrapper">
+         <a href="#!" class="brand-logo">Logo</a>
+
+         <!-- MOBIL MENU SIDE-NAV Trigger -->
+         <a href="#" data-activates="mobile-demo" class="button-collapse" id="bal-menu"><i class="material-icons">menu</i></a>
+
+         <!-- MAIN MENU -->
+         <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="movies">Movies</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+         </ul>
+
+
+        <!-- MOBIL MENU SIDE-NEV Structure -->
+        <ul class="side-nav" id="mobile-demo">
+           <li><a href="movies">Movies</a></li>
+           <li><a href="badges.html">Components</a></li>
+           <li><a href="collapsible.html">Javascript</a></li>
+           <li><a href="mobile.html">Mobile</a></li>
+         </ul>
+
+
+      </div>
+   </nav>
+</header>";s:4:"code";N;s:11:"description";s:14:"default header";}}

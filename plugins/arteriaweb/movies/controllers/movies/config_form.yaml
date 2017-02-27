@@ -1,0 +1,11 @@
+name: Movies
+modelClass: Arteriaweb\Movies\Models\Movie
+form: $/arteriaweb/movies/models/movie/fields.yaml
+defaultRedirect: arteriaweb/movies/movies
+create:
+    redirect: 'arteriaweb/movies/movies/update/:id'
+    redirectClose: arteriaweb/movies/movies
+update:
+    redirect: arteriaweb/movies/movies
+    redirectClose: arteriaweb/movies/movies
+preview: {  }

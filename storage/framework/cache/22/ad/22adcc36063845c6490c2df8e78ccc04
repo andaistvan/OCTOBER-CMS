@@ -1,0 +1,46 @@
+1488235044a:1:{s:19:"globals/scripts.htm";a:6:{s:8:"fileName";s:19:"globals/scripts.htm";s:7:"content";s:514:"description = "scripts"
+==
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+<!-- VENDOR FRAMEWORK.JS  -->
+<script src="{{ ['assets/js/materialize.min.js']|theme }}"></script>
+
+
+<!-- THEME.JS : scripts INIT  -->
+<script src="{{ ['assets/js/theme.js']|theme }}"></script>
+
+
+<!-- OCTOBER FRAMEWORK : AJAX etc.  -->
+{% framework extras %}
+
+
+<!-- ADDONS : wow, sticky.js etc.  -->
+{% partial "_addons/vendor-scripts-init" %}
+
+
+<!-- NOTES -->
+<!-- 'assets/js/materialize.min.js' -->
+";s:5:"mtime";i:1487413939;s:6:"markup";s:486:"<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+<!-- VENDOR FRAMEWORK.JS  -->
+<script src="{{ ['assets/js/materialize.min.js']|theme }}"></script>
+
+
+<!-- THEME.JS : scripts INIT  -->
+<script src="{{ ['assets/js/theme.js']|theme }}"></script>
+
+
+<!-- OCTOBER FRAMEWORK : AJAX etc.  -->
+{% framework extras %}
+
+
+<!-- ADDONS : wow, sticky.js etc.  -->
+{% partial "_addons/vendor-scripts-init" %}
+
+
+<!-- NOTES -->
+<!-- 'assets/js/materialize.min.js' -->";s:4:"code";N;s:11:"description";s:7:"scripts";}}

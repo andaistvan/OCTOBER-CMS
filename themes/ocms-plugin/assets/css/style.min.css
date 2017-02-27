@@ -3029,3 +3029,5 @@ html { width: 100%; }
 body { width: 100%; max-width: 1600px; display: table; margin: 0 auto; }
 
 .fullwidth { width: 100%; }
+
+.movies-head-container { min-width: 100%; height: 100px; max-width: 100px; overflow: hidden; }

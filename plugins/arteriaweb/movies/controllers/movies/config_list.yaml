@@ -1,0 +1,11 @@
+title: Movies
+modelClass: Arteriaweb\Movies\Models\Movie
+list: $/arteriaweb/movies/models/movie/columns.yaml
+recordUrl: 'arteriaweb/movies/movies/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
