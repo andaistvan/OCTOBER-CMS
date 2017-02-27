@@ -1,0 +1,16 @@
+html{
+   width: 100%;
+}
+
+body{
+   width: 100%;
+   max-width: 1600px;
+   display: table;
+   margin: 0 auto;
+   @extend .grey, .lighten-5;
+
+}
+
+.fullwidth{
+   width: 100%;
+}

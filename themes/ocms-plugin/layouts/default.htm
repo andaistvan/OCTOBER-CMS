@@ -1,0 +1,20 @@
+description = "default layout"
+==
+<html lang="hu">
+<head>
+   {% partial "globals/meta" %}
+   {% partial "globals/stylesheet" %}
+   {% styles %}
+</head>
+<body>
+
+{% partial "globals/header" %}
+
+{% page %}
+
+{% partial "globals/footer" %}
+
+{% partial "globals/scripts" %}
+{% scripts %}
+</body>
+</html>
