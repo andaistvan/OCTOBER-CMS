@@ -3,3 +3,12 @@
 1.0.2:
     - 'Created table arteriaweb_movies_'
     - builder_table_create_arteriaweb_movies_.php
+1.0.3:
+    - 'Updated table arteriaweb_movies_'
+    - builder_table_update_arteriaweb_movies_.php
+1.0.4:
+    - 'Created table arteriaweb_movies_genres'
+    - builder_table_create_arteriaweb_movies_genres.php
+1.0.5:
+    - 'Created table arteriaweb_movies_movies_genres'
+    - builder_table_create_arteriaweb_movies_movies_genres.php

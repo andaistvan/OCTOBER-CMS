@@ -42,35 +42,73 @@ class __TwigTemplate_2604c62f5e641f4032158960c954a7a64a8a11370168316e436f2b73b76
         // line 13
         if ((isset($context["record"]) ? $context["record"] : null)) {
             // line 14
-            echo "\t\t\t\t\t   <span class=\"card-title\">";
+            echo "\t\t\t\t\t   <h3><span class=\"card-title\">";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "name", array()), "html", null, true);
-            echo "</span>
-
+            echo "</span></h3>
 \t\t\t\t\t\t <span style=\"margin-left:0px;\" class=\"badge blue white-text left\">";
-            // line 16
+            // line 15
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "year", array()), "html", null, true);
             echo "</span><br>
-
+\t\t\t\t\t\t <img src=\"";
+            // line 16
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "poster", array()), "thumb", array(0 => 200, 1 => (isset($context["auto"]) ? $context["auto"] : null)), "method"), "html", null, true);
+            echo "\">
 \t\t\t\t\t\t <h6 class=\"light\">Description</h6>
 \t\t\t\t\t\t <p class=\"flow-text\">";
-            // line 19
+            // line 18
             echo $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "description", array());
             echo "</p>
-\t\t\t\t\t\t <div class=\"media\">
-\t\t\t\t\t\t \t<img class=\"materialboxed\" height=\"100px\" src=\"";
+\t\t\t\t\t\t<h3 class=\"light\">Image Gallery</h3>
+\t\t\t\t\t\t<ul class=\"gallery clearfix\">
+\t\t\t\t\t\t\t";
             // line 21
-            echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/movies/slide02.jpg");
-            echo "\" alt=\"\">
-\t\t\t\t\t\t </div>
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "movie_gallery", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
+                // line 22
+                echo "\t\t\t\t\t\t\t\t<li style=\"display: inline-block;\">
+\t\t\t\t\t\t\t\t\t<img class=\"materialboxed\" src=\"";
+                // line 23
+                echo twig_escape_filter($this->env, $this->getAttribute($context["image"], "path", array()), "html", null, true);
+                echo "\" width=\"80px\" height=\"80px\" alt=\"\">
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 26
+            echo "\t\t\t\t\t\t</ul>
+
+\t\t\t\t\t\t<h3 class=\"light\">Genres</h3>
+\t\t\t\t\t\t";
+            // line 29
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "genres", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["genre"]) {
+                // line 30
+                echo "\t\t\t\t\t\t\t<div class=\"chip\">
+\t\t\t\t\t\t\t\t";
+                // line 31
+                echo $this->getAttribute($context["genre"], "genre_title", array());
+                echo "
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['genre'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 34
+            echo "
 \t\t\t\t\t";
         } else {
-            // line 24
+            // line 36
             echo "\t\t\t\t\t    ";
             echo twig_escape_filter($this->env, (isset($context["notFoundMessage"]) ? $context["notFoundMessage"] : null), "html", null, true);
             echo "
 \t\t\t\t\t";
         }
-        // line 26
+        // line 38
         echo "\t\t\t\t</div>
 \t\t\t</div>
 
@@ -92,7 +130,7 @@ class __TwigTemplate_2604c62f5e641f4032158960c954a7a64a8a11370168316e436f2b73b76
 
     public function getDebugInfo()
     {
-        return array (  74 => 26,  68 => 24,  62 => 21,  57 => 19,  51 => 16,  45 => 14,  43 => 13,  39 => 11,  36 => 10,  33 => 9,  31 => 8,  23 => 2,  19 => 1,);
+        return array (  112 => 38,  106 => 36,  102 => 34,  93 => 31,  90 => 30,  86 => 29,  81 => 26,  72 => 23,  69 => 22,  65 => 21,  59 => 18,  54 => 16,  50 => 15,  45 => 14,  43 => 13,  39 => 11,  36 => 10,  33 => 9,  31 => 8,  23 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -118,15 +156,27 @@ class __TwigTemplate_2604c62f5e641f4032158960c954a7a64a8a11370168316e436f2b73b76
 \t\t\t<div class=\"card-panel blue-grey lighten-5\">
 \t\t\t\t<div class=\"card-content\">
 \t\t\t\t\t{% if record %}
-\t\t\t\t\t   <span class=\"card-title\">{{ record.name }}</span>
-
+\t\t\t\t\t   <h3><span class=\"card-title\">{{ record.name }}</span></h3>
 \t\t\t\t\t\t <span style=\"margin-left:0px;\" class=\"badge blue white-text left\">{{ record.year }}</span><br>
-
+\t\t\t\t\t\t <img src=\"{{record.poster.thumb(200,auto)}}\">
 \t\t\t\t\t\t <h6 class=\"light\">Description</h6>
 \t\t\t\t\t\t <p class=\"flow-text\">{{ record.description|raw }}</p>
-\t\t\t\t\t\t <div class=\"media\">
-\t\t\t\t\t\t \t<img class=\"materialboxed\" height=\"100px\" src=\"{{'assets/images/movies/slide02.jpg'|theme}}\" alt=\"\">
-\t\t\t\t\t\t </div>
+\t\t\t\t\t\t<h3 class=\"light\">Image Gallery</h3>
+\t\t\t\t\t\t<ul class=\"gallery clearfix\">
+\t\t\t\t\t\t\t{% for image in record.movie_gallery %}
+\t\t\t\t\t\t\t\t<li style=\"display: inline-block;\">
+\t\t\t\t\t\t\t\t\t<img class=\"materialboxed\" src=\"{{image.path}}\" width=\"80px\" height=\"80px\" alt=\"\">
+\t\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t{% endfor %}
+\t\t\t\t\t\t</ul>
+
+\t\t\t\t\t\t<h3 class=\"light\">Genres</h3>
+\t\t\t\t\t\t{% for genre in record.genres %}
+\t\t\t\t\t\t\t<div class=\"chip\">
+\t\t\t\t\t\t\t\t{{genre.genre_title|raw }}
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t{% endfor %}
+
 \t\t\t\t\t{% else %}
 \t\t\t\t\t    {{ notFoundMessage }}
 \t\t\t\t\t{% endif %}

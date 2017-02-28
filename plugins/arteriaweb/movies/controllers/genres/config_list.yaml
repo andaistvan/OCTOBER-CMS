@@ -1,0 +1,11 @@
+list: $/arteriaweb/movies/models/genre/columns.yaml
+modelClass: Arteriaweb\Movies\Models\Genre
+title: Genres
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'arteriaweb/movies/genres/update/:id'

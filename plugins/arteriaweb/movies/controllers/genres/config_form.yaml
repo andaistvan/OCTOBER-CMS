@@ -1,0 +1,10 @@
+name: Genres
+form: $/arteriaweb/movies/models/genre/fields.yaml
+modelClass: Arteriaweb\Movies\Models\Genre
+defaultRedirect: arteriaweb/movies/genres
+create:
+    redirect: 'arteriaweb/movies/genres/update/:id'
+    redirectClose: arteriaweb/movies/genres
+update:
+    redirect: arteriaweb/movies/genres
+    redirectClose: arteriaweb/movies/genres

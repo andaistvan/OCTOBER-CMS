@@ -1,5 +1,5 @@
-1488242830a:1:{s:10:"movies.htm";a:10:{s:8:"fileName";s:10:"movies.htm";s:7:"content";s:998:"title = "Movies"
-url = "/movies"
+1488283744a:1:{s:10:"movies.htm";a:10:{s:8:"fileName";s:10:"movies.htm";s:7:"content";s:1029:"title = "Movies"
+url = "/movies/:page?"
 layout = "default"
 is_hidden = 0
 
@@ -9,8 +9,9 @@ scope = "-"
 displayColumn = "name"
 noRecordsMessage = "No records found"
 detailsPage = "movie-single"
-detailsKeyColumn = "id"
-detailsUrlParameter = "id"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+recordsPerPage = 10
 pageNumber = "{{ :page }}"
 ==
 {% partial 'movies/page-head' %}
@@ -38,7 +39,7 @@ pageNumber = "{{ :page }}"
 			<p class="white-text light">p paragraph</p>
 		</section>
 	</div>
-</div>";s:5:"mtime";i:1488240877;s:6:"markup";s:688:"{% partial 'movies/page-head' %}
+</div>";s:5:"mtime";i:1488277580;s:6:"markup";s:688:"{% partial 'movies/page-head' %}
 
 <section id="movies-content" class="section">
 	
@@ -63,4 +64,4 @@ pageNumber = "{{ :page }}"
 			<p class="white-text light">p paragraph</p>
 		</section>
 	</div>
-</div>";s:4:"code";N;s:5:"title";s:6:"Movies";s:3:"url";s:7:"/movies";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:30:"Arteriaweb\Movies\Models\Movie";s:5:"scope";s:1:"-";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:12:"movie-single";s:16:"detailsKeyColumn";s:2:"id";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+</div>";s:4:"code";N;s:5:"title";s:6:"Movies";s:3:"url";s:14:"/movies/:page?";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:9:{s:10:"modelClass";s:30:"Arteriaweb\Movies\Models\Movie";s:5:"scope";s:1:"-";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:12:"movie-single";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:14:"recordsPerPage";s:2:"10";s:10:"pageNumber";s:11:"{{ :page }}";}}}

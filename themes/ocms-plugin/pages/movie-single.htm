@@ -1,12 +1,12 @@
 title = "Movie single"
-url = "/movie/:id"
+url = "/movies/movie/:slug"
 layout = "default"
 is_hidden = 0
 
 [builderDetails]
 modelClass = "Arteriaweb\Movies\Models\Movie"
-identifierValue = "{{ :id }}"
-modelKeyColumn = "id"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
 ==
@@ -23,15 +23,27 @@ notFoundMessage = "Record not found"
 			<div class="card-panel blue-grey lighten-5">
 				<div class="card-content">
 					{% if record %}
-					   <span class="card-title">{{ record.name }}</span>
-
+					   <h3><span class="card-title">{{ record.name }}</span></h3>
 						 <span style="margin-left:0px;" class="badge blue white-text left">{{ record.year }}</span><br>
-
+						 <img src="{{record.poster.thumb(200,auto)}}">
 						 <h6 class="light">Description</h6>
 						 <p class="flow-text">{{ record.description|raw }}</p>
-						 <div class="media">
-						 	<img class="materialboxed" height="100px" src="{{'assets/images/movies/slide02.jpg'|theme}}" alt="">
-						 </div>
+						<h3 class="light">Image Gallery</h3>
+						<ul class="gallery clearfix">
+							{% for image in record.movie_gallery %}
+								<li style="display: inline-block;">
+									<img class="materialboxed" src="{{image.path}}" width="80px" height="80px" alt="">
+								</li>
+							{% endfor %}
+						</ul>
+
+						<h3 class="light">Genres</h3>
+						{% for genre in record.genres %}
+							<div class="chip">
+								{{genre.genre_title|raw }}
+							</div>
+						{% endfor %}
+
 					{% else %}
 					    {{ notFoundMessage }}
 					{% endif %}

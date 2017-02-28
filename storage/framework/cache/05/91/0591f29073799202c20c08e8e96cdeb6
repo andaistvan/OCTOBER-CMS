@@ -1,4 +1,4 @@
-1488243294a:1:{s:18:"globals/header.htm";a:6:{s:8:"fileName";s:18:"globals/header.htm";s:7:"content";s:1533:"description = "default header"
+1488283744a:1:{s:18:"globals/header.htm";a:6:{s:8:"fileName";s:18:"globals/header.htm";s:7:"content";s:1531:"description = "default header"
 ==
 <header id="main-header">
 
@@ -20,7 +20,7 @@
          <!-- MAIN MENU -->
          <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
-            <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{' movies '|page}}">Movies</a></li>
+            <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{'movies'|page}}">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
          </ul>
@@ -38,7 +38,7 @@
       </div>
    </nav>
 </header>
-";s:5:"mtime";i:1488239675;s:6:"markup";s:1497:"<header id="main-header">
+";s:5:"mtime";i:1488278014;s:6:"markup";s:1495:"<header id="main-header">
 
       <!-- MAIN MENU Dropdown Structure -->
          <ul id="dropdown1" class="dropdown-content">
@@ -58,7 +58,7 @@
          <!-- MAIN MENU -->
          <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
-            <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{' movies '|page}}">Movies</a></li>
+            <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{'movies'|page}}">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
          </ul>

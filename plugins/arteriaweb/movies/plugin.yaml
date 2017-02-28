@@ -9,3 +9,8 @@ navigation:
         label: Movies
         url: arteriaweb/movies/movies
         icon: icon-bank
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: arteriaweb/movies/genres
+                icon: icon-tag

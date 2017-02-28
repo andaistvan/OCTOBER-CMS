@@ -1,0 +1,4 @@
+title: Genres
+modelClass: Arteriaweb\Movies\Models\Genre
+toolbar:
+    buttons: reorder_toolbar

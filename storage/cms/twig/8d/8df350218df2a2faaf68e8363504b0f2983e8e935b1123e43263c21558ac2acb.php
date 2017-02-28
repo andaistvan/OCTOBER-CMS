@@ -42,7 +42,7 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
             echo "active";
         }
         echo "\"><a href=\"";
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter(" movies ");
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("movies");
         echo "\">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class=\"dropdown-button\" href=\"#!\" data-activates=\"dropdown1\">Dropdown<i class=\"material-icons right\">arrow_drop_down</i></a></li>
@@ -115,7 +115,7 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
          <!-- MAIN MENU -->
          <ul class=\"right hide-on-med-and-down\">
             <li><a href=\"sass.html\">Sass</a></li>
-            <li class=\"{% if this.page.id == 'movies' %}active{% endif %}\"><a href=\"{{' movies '|page}}\">Movies</a></li>
+            <li class=\"{% if this.page.id == 'movies' %}active{% endif %}\"><a href=\"{{'movies'|page}}\">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class=\"dropdown-button\" href=\"#!\" data-activates=\"dropdown1\">Dropdown<i class=\"material-icons right\">arrow_drop_down</i></a></li>
          </ul>
