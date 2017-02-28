@@ -8,7 +8,8 @@ modelClass = "Arteriaweb\Movies\Models\Movie"
 scope = "-"
 displayColumn = "name"
 noRecordsMessage = "No records found"
-detailsPage = "-"
+detailsPage = "movie-single"
+detailsKeyColumn = "id"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
@@ -18,7 +19,7 @@ pageNumber = "{{ :page }}"
 	
 	<div class="row">
 		<div class="container">
-			{% component 'builderList' %}
+			{% partial 'builderList::mod' %}
 		</div>
 	</div>
 	
@@ -28,13 +29,13 @@ pageNumber = "{{ :page }}"
 <div class="row  blue-grey darken-4">
 	<div class="container">
 		<section id="typgraphy" class="section">
-			<h1 class="white-text">H1 heading</h1>
-			<h2 class="white-text">H2 heading</h2>
-			<h3 class="white-text">H3 heading</h3>
-			<h4 class="white-text">H4 heading</h4>
-			<h5 class="white-text">H5 heading</h5>
-			<h6 class="white-text">H6 heading</h6>
-			<p class="white-text">p paragraph</p>
+			<h1 class="white-text light">H1 heading</h1>
+			<h2 class="white-text light">H2 heading</h2>
+			<h3 class="white-text light">H3 heading</h3>
+			<h4 class="white-text light">H4 heading</h4>
+			<h5 class="white-text light">H5 heading</h5>
+			<h6 class="white-text light">H6 heading</h6>
+			<p class="white-text light">p paragraph</p>
 		</section>
 	</div>
 </div>

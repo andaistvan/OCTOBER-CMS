@@ -27,9 +27,9 @@ class __TwigTemplate_9caf3a3e3eb4a816d42f645aeea1ee3fbc972942050582a8a18742232e3
 \t\t<div class=\"container\">
 \t\t\t";
         // line 7
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('CMS')->componentFunction("builderList"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("builderList::mod"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
         // line 8
         echo "\t\t</div>
 \t</div>
@@ -40,13 +40,13 @@ class __TwigTemplate_9caf3a3e3eb4a816d42f645aeea1ee3fbc972942050582a8a18742232e3
 <div class=\"row  blue-grey darken-4\">
 \t<div class=\"container\">
 \t\t<section id=\"typgraphy\" class=\"section\">
-\t\t\t<h1 class=\"white-text\">H1 heading</h1>
-\t\t\t<h2 class=\"white-text\">H2 heading</h2>
-\t\t\t<h3 class=\"white-text\">H3 heading</h3>
-\t\t\t<h4 class=\"white-text\">H4 heading</h4>
-\t\t\t<h5 class=\"white-text\">H5 heading</h5>
-\t\t\t<h6 class=\"white-text\">H6 heading</h6>
-\t\t\t<p class=\"white-text\">p paragraph</p>
+\t\t\t<h1 class=\"white-text light\">H1 heading</h1>
+\t\t\t<h2 class=\"white-text light\">H2 heading</h2>
+\t\t\t<h3 class=\"white-text light\">H3 heading</h3>
+\t\t\t<h4 class=\"white-text light\">H4 heading</h4>
+\t\t\t<h5 class=\"white-text light\">H5 heading</h5>
+\t\t\t<h6 class=\"white-text light\">H6 heading</h6>
+\t\t\t<p class=\"white-text light\">p paragraph</p>
 \t\t</section>
 \t</div>
 </div>";
@@ -83,7 +83,7 @@ class __TwigTemplate_9caf3a3e3eb4a816d42f645aeea1ee3fbc972942050582a8a18742232e3
 \t
 \t<div class=\"row\">
 \t\t<div class=\"container\">
-\t\t\t{% component 'builderList' %}
+\t\t\t{% partial 'builderList::mod' %}
 \t\t</div>
 \t</div>
 \t
@@ -93,13 +93,13 @@ class __TwigTemplate_9caf3a3e3eb4a816d42f645aeea1ee3fbc972942050582a8a18742232e3
 <div class=\"row  blue-grey darken-4\">
 \t<div class=\"container\">
 \t\t<section id=\"typgraphy\" class=\"section\">
-\t\t\t<h1 class=\"white-text\">H1 heading</h1>
-\t\t\t<h2 class=\"white-text\">H2 heading</h2>
-\t\t\t<h3 class=\"white-text\">H3 heading</h3>
-\t\t\t<h4 class=\"white-text\">H4 heading</h4>
-\t\t\t<h5 class=\"white-text\">H5 heading</h5>
-\t\t\t<h6 class=\"white-text\">H6 heading</h6>
-\t\t\t<p class=\"white-text\">p paragraph</p>
+\t\t\t<h1 class=\"white-text light\">H1 heading</h1>
+\t\t\t<h2 class=\"white-text light\">H2 heading</h2>
+\t\t\t<h3 class=\"white-text light\">H3 heading</h3>
+\t\t\t<h4 class=\"white-text light\">H4 heading</h4>
+\t\t\t<h5 class=\"white-text light\">H5 heading</h5>
+\t\t\t<h6 class=\"white-text light\">H6 heading</h6>
+\t\t\t<p class=\"white-text light\">p paragraph</p>
 \t\t</section>
 \t</div>
 </div>", "/Applications/MAMP/htdocs/ocms-plugin/themes/ocms-plugin/pages/movies.htm", "");

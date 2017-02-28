@@ -1822,6 +1822,12 @@
 		"oAP": "\/pages\/home.htm",
 		"oF": 0
 		},
+	"\/pages\/movie-single.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/pages\/movie-single.htm",
+		"oF": 0
+		},
 	"\/pages\/movies.htm": {
 		"ft": 8192,
 		"oA": 2,
@@ -1838,6 +1844,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/partials\/_addons\/vendor-scripts-init.htm",
+		"oF": 0
+		},
+	"\/partials\/builderList\/mod.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/partials\/builderList\/mod.htm",
 		"oF": 0
 		},
 	"\/partials\/globals\/footer.htm": {

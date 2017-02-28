@@ -19,7 +19,7 @@ class __TwigTemplate_02dc69178f8652f29fb9947ae3ec0a78fcde46cdf57ae5f38195c37c532
         echo "<section id=\"page-head\" class=\"fullwidth blue-grey\">
 \t<div class=\"row section\">
 \t\t
-\t\t\t<h3 class=\"center white-text\">";
+\t\t\t<h3 class=\"light center white-text\">";
         // line 4
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()), "html", null, true);
         echo "</h3>
@@ -56,7 +56,7 @@ class __TwigTemplate_02dc69178f8652f29fb9947ae3ec0a78fcde46cdf57ae5f38195c37c532
         return new Twig_Source("<section id=\"page-head\" class=\"fullwidth blue-grey\">
 \t<div class=\"row section\">
 \t\t
-\t\t\t<h3 class=\"center white-text\">{{ this.page.id }}</h3>
+\t\t\t<h3 class=\"light center white-text\">{{ this.page.id }}</h3>
 \t\t
 \t</div>
 </section>", "/Applications/MAMP/htdocs/ocms-plugin/themes/ocms-plugin/partials/movies/page-head.htm", "");

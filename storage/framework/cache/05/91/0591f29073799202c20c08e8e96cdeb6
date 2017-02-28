@@ -1,4 +1,4 @@
-1488234744a:1:{s:18:"globals/header.htm";a:6:{s:8:"fileName";s:18:"globals/header.htm";s:7:"content";s:1387:"description = "default header"
+1488243294a:1:{s:18:"globals/header.htm";a:6:{s:8:"fileName";s:18:"globals/header.htm";s:7:"content";s:1533:"description = "default header"
 ==
 <header id="main-header">
 
@@ -20,7 +20,7 @@
          <!-- MAIN MENU -->
          <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
-            <li><a href="movies">Movies</a></li>
+            <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{' movies '|page}}">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
          </ul>
@@ -28,7 +28,7 @@
 
         <!-- MOBIL MENU SIDE-NEV Structure -->
         <ul class="side-nav" id="mobile-demo">
-           <li><a href="movies">Movies</a></li>
+           <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{' movies '|page}}">Movies</a></li>
            <li><a href="badges.html">Components</a></li>
            <li><a href="collapsible.html">Javascript</a></li>
            <li><a href="mobile.html">Mobile</a></li>
@@ -37,7 +37,8 @@
 
       </div>
    </nav>
-</header>";s:5:"mtime";i:1488233473;s:6:"markup";s:1353:"<header id="main-header">
+</header>
+";s:5:"mtime";i:1488239675;s:6:"markup";s:1497:"<header id="main-header">
 
       <!-- MAIN MENU Dropdown Structure -->
          <ul id="dropdown1" class="dropdown-content">
@@ -57,7 +58,7 @@
          <!-- MAIN MENU -->
          <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
-            <li><a href="movies">Movies</a></li>
+            <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{' movies '|page}}">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
          </ul>
@@ -65,7 +66,7 @@
 
         <!-- MOBIL MENU SIDE-NEV Structure -->
         <ul class="side-nav" id="mobile-demo">
-           <li><a href="movies">Movies</a></li>
+           <li class="{% if this.page.id == 'movies' %}active{% endif %}"><a href="{{' movies '|page}}">Movies</a></li>
            <li><a href="badges.html">Components</a></li>
            <li><a href="collapsible.html">Javascript</a></li>
            <li><a href="mobile.html">Mobile</a></li>

@@ -36,7 +36,14 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
          <!-- MAIN MENU -->
          <ul class=\"right hide-on-med-and-down\">
             <li><a href=\"sass.html\">Sass</a></li>
-            <li><a href=\"movies\">Movies</a></li>
+            <li class=\"";
+        // line 21
+        if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "movies")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter(" movies ");
+        echo "\">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class=\"dropdown-button\" href=\"#!\" data-activates=\"dropdown1\">Dropdown<i class=\"material-icons right\">arrow_drop_down</i></a></li>
          </ul>
@@ -44,7 +51,14 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
 
         <!-- MOBIL MENU SIDE-NEV Structure -->
         <ul class=\"side-nav\" id=\"mobile-demo\">
-           <li><a href=\"movies\">Movies</a></li>
+           <li class=\"";
+        // line 29
+        if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "movies")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter(" movies ");
+        echo "\">Movies</a></li>
            <li><a href=\"badges.html\">Components</a></li>
            <li><a href=\"collapsible.html\">Javascript</a></li>
            <li><a href=\"mobile.html\">Mobile</a></li>
@@ -61,9 +75,14 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
         return "/Applications/MAMP/htdocs/ocms-plugin/themes/ocms-plugin/partials/globals/header.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  56 => 29,  41 => 21,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -96,7 +115,7 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
          <!-- MAIN MENU -->
          <ul class=\"right hide-on-med-and-down\">
             <li><a href=\"sass.html\">Sass</a></li>
-            <li><a href=\"movies\">Movies</a></li>
+            <li class=\"{% if this.page.id == 'movies' %}active{% endif %}\"><a href=\"{{' movies '|page}}\">Movies</a></li>
             <!-- Dropdown Trigger -->
             <li><a class=\"dropdown-button\" href=\"#!\" data-activates=\"dropdown1\">Dropdown<i class=\"material-icons right\">arrow_drop_down</i></a></li>
          </ul>
@@ -104,7 +123,7 @@ class __TwigTemplate_b0c5d48be57ab73fd4d3f849e53295e80455fbb56d1b5333c642b640301
 
         <!-- MOBIL MENU SIDE-NEV Structure -->
         <ul class=\"side-nav\" id=\"mobile-demo\">
-           <li><a href=\"movies\">Movies</a></li>
+           <li class=\"{% if this.page.id == 'movies' %}active{% endif %}\"><a href=\"{{' movies '|page}}\">Movies</a></li>
            <li><a href=\"badges.html\">Components</a></li>
            <li><a href=\"collapsible.html\">Javascript</a></li>
            <li><a href=\"mobile.html\">Mobile</a></li>

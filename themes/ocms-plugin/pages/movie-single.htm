@@ -1,0 +1,44 @@
+title = "Movie single"
+url = "/movie/:id"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Arteriaweb\Movies\Models\Movie"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% partial 'movies/page-head' %}
+
+<section id="movies-content" class="section">
+
+	<div class="row">
+		<div class="container">
+
+			{% set record = builderDetails.record %}
+			{% set displayColumn = builderDetails.displayColumn %}
+			{% set notFoundMessage = builderDetails.notFoundMessage %}
+			<div class="card-panel blue-grey lighten-5">
+				<div class="card-content">
+					{% if record %}
+					   <span class="card-title">{{ record.name }}</span>
+
+						 <span style="margin-left:0px;" class="badge blue white-text left">{{ record.year }}</span><br>
+
+						 <h6 class="light">Description</h6>
+						 <p class="flow-text">{{ record.description|raw }}</p>
+						 <div class="media">
+						 	<img class="materialboxed" height="100px" src="{{'assets/images/movies/slide02.jpg'|theme}}" alt="">
+						 </div>
+					{% else %}
+					    {{ notFoundMessage }}
+					{% endif %}
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
